@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maquina de Doces</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <header>
+        <nav>
+            <ul>
+                <p>Carteira</p>
+                <li>
+                    <a href="#"><img src="imgs/reais5.jpg" id="r5"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/reais2.jpg" id="r2"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/real1.png" id="r1"></a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="container">
+        <section class="vm">
+            <div id="input">
+                <div id="products-input">
+                    <div id="prateleira-input">
+                        <img src="imgs/tubes_maca-verde.jpg" alt="docea" class="doce">
+                        <img src="imgs/tubes-morango.png" alt="doceb" class="doce">
+                        <img src="imgs/tubes-twister.jpg" alt="docec" class="doce">
+                        <p>R$ 6,00</p>
+                        <p>R$ 7,00</p>
+                        <p>R$ 8,00</p>
+
+                    </div>
+                </div>
+
+                <div id="buttons-input">
+                    <span id="show-value-all"></span>
+
+                    <li id="bt1"><a>Doce A</a></li>
+                    <li id="bt2"><a>Doce B</a></li>
+                    <li id="bt3"><a>Doce C</a></li>
+
+                    <label for="check">
+                        <img src="imgs/carteira.png" id="carteira" title="Carteira">
+                    </label>
+                </div>
+
+            </div>
+
+            <div id="output">
+                <div id="products-output">
+                    <div id="prateleira-output">
+                        <img src="imgs/tubes_maca-verde.jpg" alt="docea" class="doce" id="candyA">
+                        <img src="imgs/tubes-morango.png" alt="doceb" class="doce" id="candyB">
+                        <img src="imgs/tubes-twister.jpg" alt="docec" class="doce" id="candyC">
+                    </div>
+                </div>
+
+                <div id="buttons-output">
+                    <p id="message-output">Troco</p>
+                    <span id="show-value-output"></span>
+
+                    <li id="take"><a>Pegar</a></li>
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

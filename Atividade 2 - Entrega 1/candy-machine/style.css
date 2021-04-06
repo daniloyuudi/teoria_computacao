@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+head {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: url(imgs/background.png);
+    background-size: cover;
+    z-index: 0;
+}
+
+#check:checked~header {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-inline-size: min-content;
+    background-color: #333;
+    width: 100%;
+    height: inherit;
+    left: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 5px;
+    color: #ffffff;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul p {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#r5 {
+    height: 117px;
+    transition: .5s ease;
+}
+
+#r5:hover {
+    height: 137px;
+}
+
+#r2 {
+    height: 124px;
+    transition: .5s ease;
+}
+
+#r2:hover {
+    height: 154px;
+}
+
+#r1 {
+    height: 118px;
+    transition: .5s ease;
+}
+
+#r1:hover {
+    height: 158px;
+}
+
+.vm {
+    width: 650px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222222;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#input {
+    width: 650px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #222222;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#output {
+    width: 650px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #222222;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#products-input {
+    width: 380px;
+    height: 415px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+#products-input p {
+    margin: 25px;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#prateleira-input {
+    width: 380px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#products-output {
+    width: 380px;
+    height: 200px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+#products-output p {
+    margin: 25px;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#prateleira-output {
+    width: 380px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doce {
+    width: 120px;
+    height: 120px;
+}
+
+#logo {
+    width: 380px;
+}
+
+#buttons-input {
+    width: 150px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #555555;
+    margin-left: 30px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+#buttons-input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    transition: 1s;
+}
+
+#buttons-input span {
+    width: 100px;
+    height: 40px;
+    background: #9e9e9e;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+#buttons-output {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #555555;
+    margin-left: 30px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+#buttons-output label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    transition: 1s;
+}
+
+#buttons-output span {
+    width: 100px;
+    height: 40px;
+    background: #9e9e9e;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+#carteira {
+    width: 50px;
+    cursor: pointer;
+}
+
+#carteira:hover {
+    width: 50px;
+    cursor: pointer;
+    border-style: hidden;
+}
+
+#bt1 {
+    width: 100px;
+    height: 40px;
+    background: #c4d202;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+#bt1:hover {
+    background: #6c7308;
+    cursor: pointer;
+}
+
+#bt1 a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#bt2 {
+    width: 100px;
+    height: 40px;
+    background: #d92b25;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+#bt2:hover {
+    background: #921d19;
+    cursor: pointer;
+}
+
+#bt2 a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#bt3 {
+    width: 100px;
+    height: 40px;
+    background: #2fb6e6;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+#bt3:hover {
+    background: #1b799a;
+    cursor: pointer;
+}
+
+#bt3 a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#message-output {
+    color: white;
+}
+
+#take {
+    width: 100px;
+    height: 40px;
+    background: #0f493d;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}

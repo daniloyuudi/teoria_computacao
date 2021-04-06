@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url("imgs/background.png");
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+}
+header{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+label{
+    padding: 15px;
+    z-index: 1;
+    background-color: red;
+}
+
+#carteira{
+    width: 50px;
+    position: fixed;  
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+    background-color: #333;
+    width: 400px;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    z-index: 998;
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        padding: 20px 5px;
+        color: #ffffff;
+
+    }
+}
+
+input[type="checkbox"] :checked ~ nav{
+    transform: translateX(400px);
+}
+
+ul{
+    position: absolute;
+    top: 80px;
+    width: 400px;
+    p{
+        font-family: Roboto;
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 90px;
+        padding-bottom: 20px;
+        color: #ffffff;
+
+    }
+}
+
+#r5{
+    width: 332px;
+    height: 137px;
+    padding-left: 10px;
+    transition: .5s ease;
+    &:hover{
+        width: 353px;
+        height: 157px;
+    }
+}
+
+#r2{
+    width: 332px;
+    height: 154px;
+    padding-left: 10px;
+    transition: .5s ease;
+    &:hover{
+        width: 353px;
+        height: 174px;
+    }
+}
+#r1{
+    width: 270px;
+    height: 138px;
+    padding-left: 70px;
+    transition: .5s ease;
+    &:hover{
+        width: 290px;
+        height: 178px;
+    }
+}
+  
+.vm {
+    width: 650px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #222222;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#products{
+    width: 380px;
+    height: 600px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #ffffff;
+    p{
+        margin: 25px;
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+#prateleira{
+    width: 380px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doce{
+    width: 120px;
+    height: 120px;
+
+}
+
+#logo{
+    width: 380px;    
+}
+
+#buttons{
+    width: 150px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #555555;
+    margin-left: 30px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+#bt1{
+    width: 100px;
+    height: 40px;
+    background: #2A9648;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    &:hover{
+        background: #00FF47;
+    }
+    a{
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+
+#bt2{
+    width: 100px;
+    height: 40px;
+    background: #AE3232;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    &:hover{
+        background: #FF0202;
+    }
+    a{
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+
+#bt3{
+    width: 100px;
+    height: 40px;
+    background: #2D319D;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    &:hover{
+        background: #000AFF;
+    }
+    a{
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}

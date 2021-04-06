@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maquina de Doces</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <header>
+        <nav>
+            <ul>
+                <p>Carteira</p>
+                <li>
+                    <a href="#"><img src="imgs/reais5.jpg" id="cash-5"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/reais2.jpg" id="cash-2"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/real1.png" id="cash-1"></a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="container">
+        <section class="body-machine">
+
+            <div id="products">
+                <div id="products-input">
+                    <div id="shelf-input">
+                        <p id="title-machine">Produtos</p>
+                        <p id="line"></p>
+                        <div class="candy-position">
+                            <div class="candies">
+                                <img src="imgs/tubes_maca-verde.png">
+                                <p>R$ 6,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes_maca-verde.png">
+                                <p>R$ 6,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes_maca-verde.png">
+                                <p>R$ 6,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes_maca-verde.png">
+                                <p>R$ 6,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes_maca-verde.png">
+                                <p>R$ 6,00</p>
+                            </div>
+                        </div>
+                        <p id="line"></p>
+                        <div class="candy-position">
+                            <div class="candies">
+                                <img src="imgs/tubes-morango.png">
+                                <p>R$ 7,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-morango.png">
+                                <p>R$ 7,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-morango.png">
+                                <p>R$ 7,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-morango.png">
+                                <p>R$ 7,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-morango.png">
+                                <p>R$ 7,00</p>
+                            </div>
+                        </div>
+                        <p id="line"></p>
+                        <div class="candy-position">
+                            <div class="candies">
+                                <img src="imgs/tubes-twister.png">
+                                <p>R$ 8,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-twister.png">
+                                <p>R$ 8,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-twister.png">
+                                <p>R$ 8,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-twister.png">
+                                <p>R$ 8,00</p>
+                            </div>
+                            <div class="candies">
+                                <img src="imgs/tubes-twister.png">
+                                <p>R$ 8,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="products-output">
+                    <div id="shelf-output">
+                        <img src="imgs/tubes_maca-verde.png" class="candy" id="candyA">
+                        <img src="imgs/tubes-morango.png" class="candy" id="candyB">
+                        <img src="imgs/tubes-twister.png" class="candy" id="candyC">
+                    </div>
+                </div>
+            </div>
+
+            <div id="control">
+                <div id="buttons-candy">
+                    <span id="show-input-cash"></span>
+                    <li id="btA" title="R$ 6,00"><a>Doce A</a></li>
+                    <li id="btB" title="R$ 7,00"><a>Doce B</a></li>
+                    <li id="btC" title="R$ 8,00"><a>Doce C</a></li>
+                </div>
+                <div id="cash-input">
+                    <label for="check">
+                        <img src="imgs/wallet.png" id="wallet" title="Carteira">
+                    </label>
+                </div>
+
+                <div id="cash-output">
+                    <p>Troco</p>
+                    <span id="show-output-cash"></span>
+                </div>
+                <li id="take"><a>Pegar</a></li>
+            </div>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
