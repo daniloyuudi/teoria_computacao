@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Automaton games</title>
+    <link rel="icon" type="image/x-icon" href="img/Icon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="candy-machine-button"> Máquina de doces</a>
+            <a id="elevator-button"> Elevador</a>
+        </nav>
+    </header>
+
+    <div id="container-candy-machine">
+        <input type="checkbox" id="check">
+
+        <section class="contents-wallet">
+            <div class="body-wallet">
+                <ul>
+                    <p>Carteira</p>
+                    <li>
+                        <a href="#"><img src="img/reais5.jpg" id="cash-5"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/reais2.jpg" id="cash-2"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/real1.png" id="cash-1"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contents">
+            <section class="body-machine">
+
+                <div id="products">
+                    <div id="products-input">
+                        <div id="shelf-input">
+                            <p id="title-machine">Produtos</p>
+                            <p id="line"></p>
+                            <div class="candy-position">
+                                <div class="candies">
+                                    <img src="img/tubes_maca-verde.png">
+                                    <p>R$ 6,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes_maca-verde.png">
+                                    <p>R$ 6,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes_maca-verde.png">
+                                    <p>R$ 6,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes_maca-verde.png">
+                                    <p>R$ 6,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes_maca-verde.png">
+                                    <p>R$ 6,00</p>
+                                </div>
+                            </div>
+                            <p id="line"></p>
+                            <div class="candy-position">
+                                <div class="candies">
+                                    <img src="img/tubes-morango.png">
+                                    <p>R$ 7,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-morango.png">
+                                    <p>R$ 7,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-morango.png">
+                                    <p>R$ 7,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-morango.png">
+                                    <p>R$ 7,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-morango.png">
+                                    <p>R$ 7,00</p>
+                                </div>
+                            </div>
+                            <p id="line"></p>
+                            <div class="candy-position">
+                                <div class="candies">
+                                    <img src="img/tubes-twister.png">
+                                    <p>R$ 8,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-twister.png">
+                                    <p>R$ 8,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-twister.png">
+                                    <p>R$ 8,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-twister.png">
+                                    <p>R$ 8,00</p>
+                                </div>
+                                <div class="candies">
+                                    <img src="img/tubes-twister.png">
+                                    <p>R$ 8,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="products-output">
+                        <div id="shelf-output">
+                            <img src="img/tubes_maca-verde.png" class="candy" id="candyA">
+                            <img src="img/tubes-morango.png" class="candy" id="candyB">
+                            <img src="img/tubes-twister.png" class="candy" id="candyC">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="control">
+                    <div id="buttons-candy">
+                        <span id="show-input-cash"></span>
+                        <li id="btA" title="R$ 6,00"><a>A</a></li>
+                        <li id="btB" title="R$ 7,00"><a>B</a></li>
+                        <li id="btC" title="R$ 8,00"><a>C</a></li>
+                    </div>
+                    <div id="cash-input">
+                        <label for="check">
+                        <img src="img/wallet.png" id="wallet" title="Carteira">
+                    </label>
+                    </div>
+
+                    <div id="cash-output">
+                        <p>Troco</p>
+                        <span id="show-output-cash"></span>
+                    </div>
+                    <li id="take"><a>Pegar</a></li>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="container-elevator">
+
+        <div id="andares">
+            <div id="quarto">
+                <h2>3º</h2>
+                <div id="EFI4" class="entranceFloorInput EFI4" title="3° floor">
+                    <a id="control-panel"><img src="img/control.jpg" title="Painel de controle do elevator"></a>
+                </div>
+            </div>
+            <div id="sala">
+                <h2>2º</h2>
+                <div id="EFI3" class="entranceFloorInput EFI3" title="2° floor">
+                    <a id="control-panel"><img src="img/control.jpg" title="Painel de controle do elevator"></a>
+                </div>
+            </div>
+
+            <div id="consinha">
+                <h2>1º</h2>
+                <div id="EFI2" class="entranceFloorInput EFI2" title="1° floor">
+                    <a id="control-panel"><img src="img/control.jpg" title="Painel de controle do elevator"></a>
+                </div>
+            </div>
+
+            <div id="entrada">
+                <h2>Térreo</h2>
+                <div id="EFI1" class="entranceFloorInput EFI1" title="Térreo">
+                    <a id="control-panel"><img src="img/control.jpg" title="Painel de controle do elevator"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="pavement-4"></div>
+        <div class="pavement-3"></div>
+        <div class="pavement-2"></div>
+        <div class="pavement-1"></div>
+    </div>
+
+    <script id="view-elevator" type="text/x-handlebars-template">
+        <div class="poco">
+
+            <div class="elevator floor1" data-floor="1">
+                <div class="door doorL"></div>
+                <div class="door doorR"></div>
+            </div>
+
+            <div class="sign L4">
+                <span class="direction"></span>
+            </div>
+            <div class="control-elevator CE4" title="⓷">
+                <a class="button-down BD42" data-floor="42"></a>
+            </div>
+
+            <div class="sign L3">
+                <span class="direction"></span>
+            </div>
+            <div class="control-elevator CE3" title="⓶">
+                <a class="button-up BP31" data-floor="31"></a>
+                <a class="button-down BD32" data-floor="32"></a>
+            </div>
+
+            <div class="sign L2">
+                <span class="direction"></span>
+            </div>
+            <div class="control-elevator CE2" title="⓵">
+                <a class="button-up BP21" data-floor="21"></a>
+                <a class="button-down BD22" data-floor="22"></a>
+            </div>
+
+            <div class="sign L1">
+                <span class="direction"></span>
+            </div>
+            <div class="control-elevator CE1" title="Τ">
+                <a class="button-up BP11" data-floor="11"></a>
+            </div>
+            <div class="buttons-control-panel close">
+                <a class="button botao4" data-floor="10"><span title="Fechar painel">◫</span></a>
+                <a class="button botao4" data-floor="4"><span>⓷</span></a>
+                <a class="button botao3" data-floor="3"><span>⓶</span></a>
+                <a class="button botao2" data-floor="2"><span>⓵</span></a>
+                <a class="button botao1" data-floor="1"><span>Τ</span></a>
+            </div>
+        </div>
+    </script>
+
+    <script src="js/candy-machine.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/elevator.js"></script>
+</body>
+
+</html>
